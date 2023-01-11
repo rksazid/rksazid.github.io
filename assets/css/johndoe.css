@@ -11435,6 +11435,17 @@ pre .code {
   border-radius: 50%;
 }
 
+.brand-img-mobile {
+  border: 10px solid white;
+  -webkit-transition: .5s !important;
+  transition: .5s !important;
+  -weblit-transition: .5s !important;
+  z-index: 2;
+  box-shadow: 0 5px 1px rgb(128 128 128 / 13%);
+  width: 170px;
+  border-radius: 50%;
+}
+
 .navbar .brand .brand-txt {
   position: relative;
   bottom: -20px;
@@ -11555,6 +11566,7 @@ pre .code {
   .header {
     height: 500px;
     min-height: 500px;
+    background-position-x: 80%;
   }
   .header .social-icons {
     margin: auto;
@@ -11564,6 +11576,9 @@ pre .code {
   }
   .header .header-content .header-mono {
     letter-spacing: 2px;
+  }
+  .about-section .about-card {
+    padding: 35px;
   }
 }
 
@@ -11681,4 +11696,10 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .about-section .about-card {
+    padding: 35px;
+  }
 }
