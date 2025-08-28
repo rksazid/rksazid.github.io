@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://rksazid.onrender.com/sitemap.xml
+
+# Allow search engines to crawl all content
+Allow: /assets/
+Allow: /assets/imgs/
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/resume_rezaul_karim.pdf
+
+# Disallow unnecessary files
+Disallow: /sw.js
+Disallow: /manifest.json
+
+# Crawl-delay (optional)
+Crawl-delay: 1
