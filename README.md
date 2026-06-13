@@ -8,7 +8,7 @@
 
 ### 🎯 Modern Design & UX
 - **Responsive Design**: Mobile-first approach with modern CSS Grid and Flexbox
-- **Modern Typography**: Inter font family for better readability
+- **Distinctive Typography**: Bricolage Grotesque + IBM Plex Sans + JetBrains Mono
 - **Smooth Animations**: CSS transitions and JavaScript-powered scroll animations
 - **Interactive Elements**: Hover effects, loading states, and micro-interactions
 - **Accessibility**: ARIA labels, focus states, and keyboard navigation support
@@ -43,32 +43,31 @@
 
 ## 🛠️ Technologies Used
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Styling**: Bootstrap 4.3.1 + Custom CSS
-- **Icons**: Themify Icons
-- **Fonts**: Inter, JetBrains Mono
-- **Build Tools**: Native browser APIs, Service Workers
-- **PWA**: Web App Manifest, Service Worker API
+- **Frontend**: Hand-written HTML5, CSS3, vanilla JavaScript (ES6+) — no framework, no jQuery
+- **Styling**: Custom CSS design system (CSS variables, Grid, Flexbox, `clamp()` fluid type)
+- **Icons**: Inline SVG (no icon webfont dependency)
+- **Fonts**: Bricolage Grotesque (display), IBM Plex Sans (body), JetBrains Mono (code/labels)
+- **Contact form**: Formspree, with a graceful `mailto:` fallback
+- **PWA**: Web App Manifest + Service Worker (network-first for pages, cache-first for assets)
 
 ## 📁 Project Structure
 
 ```
 rksazid.github.io/
-├── index.html              # Main HTML file with SEO optimization
+├── index.html              # Single-page portfolio (semantic, SEO + JSON-LD)
 ├── manifest.json           # PWA manifest for app installation
-├── sw.js                   # Service worker for offline functionality
+├── sw.js                   # Service worker (network-first HTML, cache-first assets)
 ├── sitemap.xml             # SEO sitemap
 ├── robots.txt              # Search engine guidelines
-├── .htaccess               # Apache server configuration
+├── .htaccess               # Apache server configuration (onrender deploy)
 ├── assets/
 │   ├── css/
-│   │   ├── johndoe.css     # Base Bootstrap styles
-│   │   └── modern-styles.css # Modern enhancements and responsive design
+│   │   └── styles.css      # Full design system + responsive styles
 │   ├── js/
-│   │   ├── johndoe.js      # Original functionality
-│   │   └── modern-enhancements.js # Performance and UX improvements
-│   ├── imgs/               # Optimized images
-│   └── vendors/            # Third-party libraries
+│   │   └── main.js         # Nav, scroll-reveal, project filter, contact form
+│   ├── imgs/               # Images (avatar, etc.)
+│   ├── resume_rezaul_karim.pdf
+│   └── vendors/            # Legacy libraries (no longer referenced — safe to remove)
 └── README.md               # This file
 ```
 
@@ -126,9 +125,9 @@ This site is optimized for deployment on:
 4. **Images**: Update images in `assets/imgs/`
 
 ### Styling
-1. **Colors**: Modify CSS custom properties in `assets/css/modern-styles.css`
-2. **Fonts**: Change font imports in the HTML head section
-3. **Layout**: Adjust Bootstrap classes or add custom CSS
+1. **Colors**: Edit the CSS custom properties in the `:root` block of `assets/css/styles.css`
+2. **Fonts**: Change the Google Fonts `<link>` in the HTML head and the `--font-*` variables
+3. **Layout**: Adjust the section markup in `index.html` and the component styles in `styles.css`
 
 ### SEO Optimization
 1. **Meta Tags**: Update Open Graph and Twitter Card meta tags
@@ -168,10 +167,9 @@ This site is optimized for deployment on:
 
 ## 🔄 Future Enhancements
 
-- [ ] Dark mode toggle
+- [x] Contact form backend (Formspree)
 - [ ] Multi-language support
 - [ ] Blog integration
-- [ ] Contact form backend
 - [ ] Analytics integration
 - [ ] Performance monitoring
 
@@ -189,11 +187,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Original template by [DevCRUD](https://devcrud.com)
-- Icons by [Themify](https://themify.me/)
-- Fonts by [Google Fonts](https://fonts.google.com/)
-- Performance optimizations inspired by web.dev best practices
+- Fonts by [Google Fonts](https://fonts.google.com/) — Bricolage Grotesque, IBM Plex Sans, JetBrains Mono
+- Built from scratch (no template) with a custom CSS design system
 
 ---
 
-*Last updated: January 3, 2025*
+*Last updated: June 13, 2026*

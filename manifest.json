@@ -1,11 +1,11 @@
 {
   "name": "MD. Rezaul Karim - Lead Software Engineer",
   "short_name": "Rezaul Karim",
-  "description": "Lead Software Engineer at Liberate Labs BD specializing in Spring Boot, Ruby on Rails, Microservices, and AWS. Portfolio website of MD. Rezaul Karim.",
+  "description": "Lead Software Engineer at Liberate Labs specializing in Ruby on Rails, Java Spring Boot, microservices, and AWS. Portfolio of MD. Rezaul Karim.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#F85C70",
+  "background_color": "#0a0e14",
+  "theme_color": "#0a0e14",
   "orientation": "portrait-primary",
   "categories": ["business", "productivity"],
   "lang": "en-US",
@@ -45,10 +45,10 @@
       ]
     },
     {
-      "name": "Resume",
-      "short_name": "Resume",
-      "description": "View resume and experience",
-      "url": "#resume",
+      "name": "Experience",
+      "short_name": "Experience",
+      "description": "View work experience",
+      "url": "#experience",
       "icons": [
         {
           "src": "assets/imgs/avatar.png",
@@ -57,10 +57,10 @@
       ]
     },
     {
-      "name": "Portfolio",
-      "short_name": "Portfolio",
-      "description": "View portfolio projects",
-      "url": "#portfolio",
+      "name": "Work",
+      "short_name": "Work",
+      "description": "View projects and selected work",
+      "url": "#work",
       "icons": [
         {
           "src": "assets/imgs/avatar.png",
