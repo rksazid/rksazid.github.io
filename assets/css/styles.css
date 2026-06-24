@@ -431,6 +431,7 @@ body::after {
 }
 .hero__socials {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.55rem;
   margin-top: 2rem;
 }
@@ -974,7 +975,7 @@ textarea.input { resize: vertical; min-height: 140px; }
 .contact-line__label { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.04em; }
 .contact-line__value { color: var(--text); font-weight: 500; word-break: break-word; }
 .contact-line a.contact-line__value:hover { color: var(--accent); }
-.contact-aside__socials { display: flex; gap: 0.55rem; margin-top: 1.5rem; }
+.contact-aside__socials { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.5rem; }
 
 /* --------------------------------- Footer ------------------------------- */
 .site-footer {
