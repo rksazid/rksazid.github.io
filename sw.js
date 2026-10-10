@@ -1,13 +1,14 @@
 /* Service worker — MD. Rezaul Karim portfolio
    Strategy: network-first for navigations (always fresh HTML),
    cache-first for static assets. Bump CACHE_NAME on each release. */
-const CACHE_NAME = "rezaul-karim-portfolio-v2";
+const CACHE_NAME = "rezaul-karim-portfolio-v3";
 const PRECACHE = [
   "/",
   "/index.html",
   "/assets/css/styles.css",
   "/assets/js/main.js",
   "/assets/imgs/avatar.png",
+  "/assets/imgs/dev_img.webp",
   "/manifest.json",
 ];
 
